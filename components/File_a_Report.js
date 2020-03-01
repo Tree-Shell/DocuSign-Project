@@ -1,14 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, TextInput, CheckBox } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, TextInput, CheckBox} from 'react-native';
 
     function File_a_Report(navigation) {
     return (
       <View style={styles.container}>
-      <View style={{ padding: 35, backgroundColor: 'springgreen', alignItems: 'baseline',flexDirection: 'row'}}>
+      <View style={{ padding: 15, backgroundColor: 'springgreen', alignItems: 'baseline',flexDirection: 'row'}}>
       <Button title="File a Report" />
-      <Button title="How it Works" onPress={() => navigation.navigate('How it Work')}/>
+      <Button title="How it Works" />
       <Button title="Dashboard"/>
       </View>
+      <Text >Sumit an image</Text>
+      <View style={{ alignItems: 'center', justifyContent: 'center'}}>
       <Image 
       style={{width: 250, height: 180}} 
       source={{url: 'http://sv.cms.coopwebbuilder2.com/sites/sv/files/images/tree_on_line_0-300x225.jpg'}}
@@ -20,19 +22,23 @@ import { StyleSheet, Text, View, Button, Image, TextInput, CheckBox } from 'reac
     //   onChangeText={goalInputHandler}
     //   value={enterdedGoal}
       />
+      <Text />
       <TextInput 
       placeholder="Select Closest Utility Company"
       style={styles.input} 
       />
+      <Text />
       <TextInput 
       placeholder="Contact Name"
       style={styles.input} 
       />
+      <Text />
       <TextInput 
       placeholder="Email"
       style={styles.input} 
       />
       <Button title='Sumit' />
+      </View>
       </View>
   );
 }
@@ -49,6 +55,11 @@ const styles = StyleSheet.create({
         borderColor: 'black', 
         borderWidth: 1, 
         padding: 10    
+    },
+    backgroundImage: {
+      flex: 1,
+      alignSelf: 'stretch',
+      width: null,
     }
   });
 

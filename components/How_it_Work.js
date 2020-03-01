@@ -6,7 +6,7 @@ import { StyleSheet, Text, View, Button, Image } from 'react-native';
 function How_it_Work({navigation}) {
     return ( 
         <View style={styles.container}>
-          <View style={{ padding: 35, backgroundColor: 'springgreen', alignItems: 'baseline',flexDirection: 'row'}}>
+          <View style={{ padding: 15, backgroundColor: 'springgreen', alignItems: 'baseline',flexDirection: 'row'}}>
           <Button title="File a Report" onPress={() => navigation.navigate('File a Report')}/>
           <Button title="How it Works"/>
           <Button title="Dashboard"/>
